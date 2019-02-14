@@ -8,8 +8,17 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <%= link_to 'Demo Blog', root_path, class: "mr-auto"%>
+      <%= link_to 'Create New Post', new_post_path%>
+    </nav>
+
+    <div class="container text-center text-uppercase">
+       <%= yield :page_title %>
+    </div>
+    
+
     <%= yield %>
   </body>
 </html>

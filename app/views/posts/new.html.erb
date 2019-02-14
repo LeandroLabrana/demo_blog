@@ -1,7 +1,7 @@
-<h1 class="title">New Post</h1>
+<% content_for :page_title, "Create a new post" %>
 
 <div class="ml-3">
-  <%= simple_form_for @post do |f| %>
+  <%= simple_form_for @post do |f| %> 
 
   <div class="form-group">
     <%= f.input :title, input_html: {class: 'form-control col-lg-6'}, wrapper: false, label_html: {class: 'label'} %>
