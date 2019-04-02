@@ -1,8 +1,19 @@
 <% content_for :page_title, @post.title %>
 
 <div class="container">
-  <div>
-      <%= @post.content %>
+  <nav class="navbar navbar-light" style="background-color: #D3D3D3;">
+    <!--Left Side -->
+  <span class="navbar-text d-flex justify-content-start">
+     <strong>Actions</strong>
+  </span>
+  <!--Right Side -->
+  <div class="navbar-text d-flex justify-content-end">
+      <%= link_to "Edit", edit_post_path(@post), class: "btn btn-light mr-2" %>
+      <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-danger" %>
   </div>
-  
+</nav>
+ <div class="content">
+   <%= @post.content %>
+ </div>
+
 </div>

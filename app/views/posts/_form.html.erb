@@ -1,0 +1,17 @@
+<div class="ml-3">
+  <%= simple_form_for @post do |f| %>
+
+  <div class="form-group">
+    <%= f.input :title, input_html: {class: 'form-control col-lg-6'}, wrapper: false, label_html: {class: 'label'} %>
+  </div>
+
+
+
+  <div class="form-group">
+    <%= f.input :content, input_html: {class: 'form-control col-lg-6'}, wrapper: false, label_html: {class: 'label'} %>
+  </div>
+
+
+  <%= f.button :submit, 'Update post', class: "btn btn-primary" %>
+  <% end %>
+</div>
