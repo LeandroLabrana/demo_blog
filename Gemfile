@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+ruby '2.6.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Bootstrap 
+# Bootstrap
 gem 'bootstrap', '~> 4.2', '>= 4.2.1'
 
 # Simple Form
@@ -62,7 +62,7 @@ group :development do
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
   # Make errors better looking
   gem 'better_errors', '~> 2.5'
-  
+
 end
 
 group :test do
